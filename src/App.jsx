@@ -1,19 +1,15 @@
-import { useState , useEffect} from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { useState, useEffect } from "react";
 import "./App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Card from "./components/card";
-import Image from "./components/card/image";
-import Footer from "./components/footer";
-import Zara from "./components/zara";
-import NewsLetter from "./components/newsletter";
-import Bestsellers from "./components/products/bestsellers";
-import Topproducts from "./components/products/topproducts";
-import Header from "./components/header";
-import Explore from "./components/explore";
 
+import Header from "./components/sections/header";
+import Galery from "./components/sections/galery";
+import Topproducts from "./components/sections/popular";
+import CallToAction from "./components/sections/calltoaction";
+import Bestsellers from "./components/sections/bestsellers";
+import NewsLetter from "./components/sections/newsletter";
+import Footer from "./components/sections/footer";
 
 function App() {
   useEffect(() => {
@@ -22,9 +18,9 @@ function App() {
   return (
     <>
       <Header />
-      <Explore />
+      <Galery />
       <Topproducts />
-      <Zara />
+      <CallToAction />
       <Bestsellers />
       <NewsLetter />
       <Footer />
